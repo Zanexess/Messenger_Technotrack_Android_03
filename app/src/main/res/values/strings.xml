@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="password">Password</string>
+    <string name="nickname">Nickname</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="loginReg">Login</string>
+    <string name="opened">opened</string>
+    <string name="closed">closed</string>
+    <string name="my_nickname">Мой никнейм</string>
+    <string name="my_cid">Мой Cid</string>
+    <string name="my_sid">Мой sid</string>
+    <string name="nav_name">Нажмите для обновления</string>
+    <string name="chat_list_nav">Список чатов</string>
+    <string name="settings_nav">Настройки</string>
+    <string name="exit_nav">Выйти из профиля</string>
+    <string name="settings_text">Пока что нет информации</string>
+    <string name="add_chat_menu">Добавить чат</string>
+    <string name="change_status">Изменить статус</string>
+    <string name="create_chat_name">Имя</string>
+    <string name="create_chat_descr">Описание</string>
+    <string name="create_chat_create">Создать</string>
+    <string name="change_about_status">Статус</string>
+    <string name="change_about_change">Изменить статус</string>
+    <string name="user_nick">Никнейм</string>
+    <string name="user_status">Статус</string>
+</resources>
