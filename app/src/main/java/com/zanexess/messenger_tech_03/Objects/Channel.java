@@ -1,10 +1,6 @@
 package com.zanexess.messenger_tech_03.Objects;
 
-
-import android.os.Parcel;
-import android.os.Parcelable;
-
-public class Channel implements Parcelable {
+public class Channel {
     private String chid;
     private String name;
     private String descr;
@@ -34,18 +30,5 @@ public class Channel implements Parcelable {
 
     public String getOnline() {
         return online;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(chid);
-        dest.writeString(name);
-        dest.writeString(descr);
-        dest.writeString(online);
     }
 }
