@@ -1,7 +1,6 @@
 package com.zanexess.messenger_tech_03;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,15 +30,15 @@ public class DownloadMessage extends AsyncTask<Void, Void, String> {
             InputStream inputStream = socket.getInputStream();
             while ((bytesRead = inputStream.read(buffer)) != -1) {
                 byteArrayOutputStream.write(buffer, 0, bytesRead);
-                response += byteArrayOutputStream.toString("UTF-8");
-                Log.v("111", response);
+                response = response.concat(byteArrayOutputStream.toString("UTF-8"));
+                byteArrayOutputStream.reset();
                 //Проверка на корректность пришедшего JSON;
                 //Если корректен - останавливаемся
                 try {
                     new JSONObject(response);
                     break;
                 } catch (JSONException ex) {
-                    ex.printStackTrace();
+                    //ex.printStackTrace();
                 }
             }
         } catch (IOException e) {
